@@ -1,0 +1,106 @@
+:root {
+    --main-bg-color: #F0F3F5;
+    --text-color: #333333;
+    --accent-color: #984AE8;
+    --drop-shadow-color: #dadada;
+}
+
+:root[data-theme="dark"] {
+    --main-bg-color: #121212;
+    --text-color: #fafafa;
+    --drop-shadow-color: #333333;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content-container {
+    text-align: center;
+}
+
+.title {
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+}
+
+.slogan {
+    margin-top: 0;
+}
+
+.important-text {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.image-container {
+    background-color: white;
+    margin: 0 auto 20px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 20px;
+    filter: drop-shadow(2px 4px 4px var(--drop-shadow-color));
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+}
+
+.links-container {
+    margin: 24px 0 32px 0;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: var(--accent-color);
+    color: white;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.link:active,
+.link:hover {
+    filter: brightness(1.15) drop-shadow(2px 4px 4px var(--drop-shadow-color));
+    transition: all 0.2s ease-in;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 8px;
+    width: 42px;
+    height: 42px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+}
+
+.social-link:active,
+.social-link:hover {
+    color: var(--accent-color);
+    transition: color 0.2s ease-in;
+}
+
+.social-link span {
+    font-size: 1.6rem;
+    margin-top: 8px;
+}
